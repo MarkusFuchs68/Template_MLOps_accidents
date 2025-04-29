@@ -3,3 +3,7 @@
     remote = remote_storage
 ['remote "remote_storage"']
     url = ../../dvc_remote
+['remote "remote_gdrive"']
+    url = gdrive://my_folder_id
+    gdrive_client_id = my_client_id
+    gdrive_client_secret = my_client_secret # which should never be stored here, better use a vault
