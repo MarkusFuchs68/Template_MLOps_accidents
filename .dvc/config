@@ -1,9 +1,12 @@
 [core]
     analytics = false
-    remote = remote_storage
+    remote = origin
 ['remote "remote_storage"']
     url = ../../dvc_remote
 ['remote "remote_gdrive"']
     url = gdrive://my_folder_id
     gdrive_client_id = my_client_id
-    gdrive_client_secret = my_client_secret # which should never be stored here, better use a vault
+    gdrive_client_secret = my_client_secret
+['remote "origin"']
+    url = s3://dvc
+    endpointurl = https://dagshub.com/MarkusFuchs68/Template_MLOps_accidents.s3
